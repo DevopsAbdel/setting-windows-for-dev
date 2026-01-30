@@ -1,32 +1,4 @@
-Guide complet — commandes PowerShell (français)
 
-Ce guide fournit les commandes PowerShell et les étapes pour :
-1. Mettre à jour PowerShell
-2. Vérifier si PowerShell est à jour
-3. Autoriser l'exécution de scripts locaux
-4. Installer Chocolatey et vérifier l'installation
-5. Installer WSL2
-6. Installer des logiciels avec `winget`
-7. Configuration de Git
-8. Installer un gestionnaire de paquets (ex. `vcpkg`) — précisez si vous vouliez autre chose
-
-Remarques préalables
-- Ouvrez PowerShell en tant qu'administrateur pour les opérations système (clic droit → "Exécuter en tant qu'administrateur").
-- Certaines commandes utilisent `winget` ou `choco` — installez-les d'abord si nécessaire.
-
-1) Mettre à jour PowerShell (PowerShell 7+ / PowerShell Core)
-
-Si vous avez `winget` :
-```powershell
-winget install --id Microsoft.PowerShell -e --source winget
-# ou pour mettre à jour
-winget upgrade --id Microsoft.PowerShell -e
-```
-
-Sinon, mettez à jour via Microsoft Store (Windows 11) ou téléchargez la dernière release sur GitHub.
-
-2) Vérifier si PowerShell est à jour / afficher la version
-```markdown
 # **🛠️ Guide complet — commandes PowerShell (français)**
 
 Ce guide fournit les commandes PowerShell et les étapes principales pour configurer un poste de développement Windows.
