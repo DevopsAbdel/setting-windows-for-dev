@@ -130,6 +130,4 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 ---
 
-Merci — dites-moi si vous voulez d'autres icônes, un badge ou une table des matières cliquable.
-```
 
