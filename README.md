@@ -115,29 +115,14 @@ Get-Content $env:USERPROFILE\.ssh\id_ed25519.pub | clip
 # Collez le contenu du presse-papiers dans votre compte GitHub/GitLab
 ```
 
-8) Installer un gestionnaire de paquets (ex. `vcpkg`) — options
+8) Installer un gestionnaire via le script Astral (`uv`)
 
-Si vous vouliez `vcpkg` (gestionnaire C/C++ de Microsoft) :
+Pour installer via le script d'Astral (installeur `uv`), exécutez :
 ```powershell
-# Cloner et installer vcpkg (PowerShell, Git requis)
-git clone https://github.com/microsoft/vcpkg.git C:\tools\vcpkg
-cd C:\tools\vcpkg
-.\bootstrap-vcpkg.bat
-# Optionnel : intégration globale
-.\vcpkg integrate install
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-Vérifier :
-```powershell
-.\vcpkg.exe --version
-```
-
-Si par "UV package manager" vous entendiez autre chose, précisez (ex. `scoop`, `nuget`, `choco`, `vcpkg`). Exemples rapides pour `scoop` :
-```powershell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
-iwr -useb get.scoop.sh | iex
-scoop install 7zip git curl
-```
+(Cette commande télécharge et exécute le script d'installation fourni par `astral.sh`.)
 
 Fin
 
